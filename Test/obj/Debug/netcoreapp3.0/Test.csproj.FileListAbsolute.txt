@@ -9,3 +9,14 @@ C:\Users\Andressa\source\repos\Test\Test\bin\Debug\netcoreapp3.0\Test.dll
 C:\Users\Andressa\source\repos\Test\Test\bin\Debug\netcoreapp3.0\Test.pdb
 C:\Users\Andressa\source\repos\Test\Test\obj\Debug\netcoreapp3.0\Test.dll
 C:\Users\Andressa\source\repos\Test\Test\obj\Debug\netcoreapp3.0\Test.pdb
+C:\Users\Neuma\Desktop\Projects\Test\Test\bin\Debug\netcoreapp3.0\Test.exe
+C:\Users\Neuma\Desktop\Projects\Test\Test\bin\Debug\netcoreapp3.0\Test.deps.json
+C:\Users\Neuma\Desktop\Projects\Test\Test\bin\Debug\netcoreapp3.0\Test.runtimeconfig.json
+C:\Users\Neuma\Desktop\Projects\Test\Test\bin\Debug\netcoreapp3.0\Test.runtimeconfig.dev.json
+C:\Users\Neuma\Desktop\Projects\Test\Test\bin\Debug\netcoreapp3.0\Test.dll
+C:\Users\Neuma\Desktop\Projects\Test\Test\bin\Debug\netcoreapp3.0\Test.pdb
+C:\Users\Neuma\Desktop\Projects\Test\Test\obj\Debug\netcoreapp3.0\Test.csprojAssemblyReference.cache
+C:\Users\Neuma\Desktop\Projects\Test\Test\obj\Debug\netcoreapp3.0\Test.AssemblyInfoInputs.cache
+C:\Users\Neuma\Desktop\Projects\Test\Test\obj\Debug\netcoreapp3.0\Test.AssemblyInfo.cs
+C:\Users\Neuma\Desktop\Projects\Test\Test\obj\Debug\netcoreapp3.0\Test.dll
+C:\Users\Neuma\Desktop\Projects\Test\Test\obj\Debug\netcoreapp3.0\Test.pdb
