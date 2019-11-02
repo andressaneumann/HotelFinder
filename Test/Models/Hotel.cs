@@ -8,10 +8,12 @@ namespace Test.Models
     {
         public string Name { get; set; }
         public int ClassificationLevel { get; set; }
-        public float WeekTaxValue { get; set; }
-        public float WeekendTaxValue { get; set; }
+        public float WeekTaxValueRegularClient { get; set; }
+        public float WeekTaxValueFidelityClient { get; set; }
+        public float WeekendTaxValueRegularClient { get; set; }
+        public float WeekendTaxValueFidelityClient { get; set; }
 
-
+        public float TotalValueReservation { get; set; }
        
     }
 }
