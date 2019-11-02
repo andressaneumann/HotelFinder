@@ -9,8 +9,11 @@ namespace Test.Services
 {
     public class HotelBestOptionSearcher
     {
+        //Getting all hotels from repository
         List<Hotel> _availableHotels = HotelRepository.GetAvailableHotels();
 
+
+        //Function to calculate the best hotel option - uses the auxiliary functions to find the best option
         public string CalculateBestHotel(string userInput)
         {
             string[] splittedUserInputs = SplitUserInput(userInput);
@@ -27,6 +30,7 @@ namespace Test.Services
             return bestOption.Name;
         }
 
+        //Validation of the customer type
         public bool CheckingIfCustomerTypeIsValid(string customerType)
         {
             if (customerType != "regular" && customerType != "rewards")
@@ -35,6 +39,7 @@ namespace Test.Services
             return true;
         }
 
+        //This function splits the user input into usable variables
         public string[] SplitUserInput(string userInput)
         {
             string[] separators = { ": ", "(", ")", ","," " };            
@@ -43,6 +48,7 @@ namespace Test.Services
             return splittedUserInputs;
         }
 
+        //This function extracts the days that the user inserted on the input
         public List<string> GettingRequestedDays(string[] splittedUserInputs)
         {
             List<string> daysOfTheWeek = new List<string>();
@@ -57,20 +63,17 @@ namespace Test.Services
             return daysOfTheWeek;
         }
 
+        //
         public void CustomerHotelsTaxValues(List<string> requestedDays, string customerType)
         {
             bool isRegular = customerType == "regular" ? true : false;
 
             foreach (var day in requestedDays)
             {
-                if (day == "sat" || day == "sun")
-                {
-                    WeekendTaxCalculation(isRegular);
-                }
-                else
-                {
-                    WeekTaxCalculation(isRegular);
-                }                                    
+                if (day == "sat" || day == "sun")                
+                    WeekendTaxCalculation(isRegular);                
+                else                
+                    WeekTaxCalculation(isRegular);                                                    
             }
         }
 
@@ -144,7 +147,6 @@ namespace Test.Services
                     }
                 }
             }
-
             return CheapestHotel;
         }
     }
