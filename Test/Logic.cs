@@ -43,10 +43,8 @@ namespace Test
             string[] splittedUserInputs = SplitUserInput(userInput);
             string customerType = splittedUserInputs[0].ToLower();
 
-            if (customerType != "regular" && customerType != "rewards")
-            {
+            if (!CheckingIfCustomerTypeIsValid(customerType))
                 return "Invalid";
-            }
 
             List<string> requestedDays = GettingRequestedDays(splittedUserInputs);
 
@@ -54,6 +52,14 @@ namespace Test
             Hotel bestOption = CheapestOption();
 
             return bestOption.Name;
+        }
+
+        public bool CheckingIfCustomerTypeIsValid(string customerType)
+        {
+            if (customerType != "regular" && customerType != "rewards")
+                return false;
+
+            return true;
         }
 
         public string[] SplitUserInput(string userInput)
