@@ -3,40 +3,13 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 using Test.Models;
+using Test.Repositories;
 
-namespace Test
+namespace Test.Services
 {
-    public class Logic
+    public class HotelBestOptionSearcher
     {
-        Hotel Lakewood = new Hotel()
-        {
-            Name = "Lakewood",
-            ClassificationLevel = 3,
-            WeekTaxValueRegularClient = 110,
-            WeekTaxValueFidelityClient = 80,
-            WeekendTaxValueRegularClient = 90,
-            WeekendTaxValueFidelityClient = 80
-        };
-
-        Hotel Bridgewood = new Hotel()
-        {
-            Name = "Bridgewood",
-            ClassificationLevel = 4,
-            WeekTaxValueRegularClient = 160,
-            WeekTaxValueFidelityClient = 110,
-            WeekendTaxValueRegularClient = 60,
-            WeekendTaxValueFidelityClient = 50
-        };
-
-        Hotel Ridgewood = new Hotel()
-        {
-            Name = "Ridgewood",
-            ClassificationLevel = 5,
-            WeekTaxValueRegularClient = 220,
-            WeekTaxValueFidelityClient = 100,
-            WeekendTaxValueRegularClient = 150,
-            WeekendTaxValueFidelityClient = 40
-        };
+        List<Hotel> _availableHotels = HotelRepository.GetAvailableHotels();
 
         public string CalculateBestHotel(string userInput)
         {
@@ -86,53 +59,62 @@ namespace Test
 
         public void CustomerHotelsTaxValues(List<string> requestedDays, string customerType)
         {
+            bool isRegular = customerType == "regular" ? true : false;
+
             foreach (var day in requestedDays)
             {
-                switch (customerType)
+                if (day == "sat" || day == "sun")
                 {
-                    case "regular":
-
-                        if (day == "sat" || day == "sun")
-                        {
-                            Lakewood.TotalValueReservation += Lakewood.WeekendTaxValueRegularClient;
-                            Bridgewood.TotalValueReservation += Bridgewood.WeekendTaxValueRegularClient;
-                            Ridgewood.TotalValueReservation += Ridgewood.WeekendTaxValueRegularClient;
-                        }
-                        else
-                        {
-                            Lakewood.TotalValueReservation += Lakewood.WeekTaxValueRegularClient;
-                            Bridgewood.TotalValueReservation += Bridgewood.WeekTaxValueRegularClient;
-                            Ridgewood.TotalValueReservation += Ridgewood.WeekTaxValueRegularClient;
-                        }
-
-                        break;
-
-                    case "rewards":
-
-                        if (day == "sat" || day == "sun")
-                        {
-                            Lakewood.TotalValueReservation += Lakewood.WeekendTaxValueFidelityClient;
-                            Bridgewood.TotalValueReservation += Bridgewood.WeekendTaxValueFidelityClient;
-                            Ridgewood.TotalValueReservation += Ridgewood.WeekendTaxValueFidelityClient;
-                        }
-                        else
-                        {
-                            Lakewood.TotalValueReservation += Lakewood.WeekTaxValueFidelityClient;
-                            Bridgewood.TotalValueReservation += Bridgewood.WeekTaxValueFidelityClient;
-                            Ridgewood.TotalValueReservation += Ridgewood.WeekTaxValueFidelityClient;
-                        }
-
-                        break;
-                }                
+                    WeekendTaxCalculation(isRegular);
+                }
+                else
+                {
+                    WeekTaxCalculation(isRegular);
+                }                                    
             }
+        }
+
+        public List<Hotel> WeekendTaxCalculation(bool isRegular)
+        {
+            if (isRegular)
+            {
+                foreach (Hotel hotel in _availableHotels)
+                {
+                    hotel.TotalValueReservation += hotel.WeekendTaxValueRegularClient;
+                }
+
+                return _availableHotels;
+            }
+
+            foreach (Hotel hotel in _availableHotels)
+            {
+                hotel.TotalValueReservation += hotel.WeekendTaxValueFidelityClient;
+            }
+            return _availableHotels;
+        }
+
+        public List<Hotel> WeekTaxCalculation(bool isRegular)
+        {
+            if (isRegular)
+            {
+                foreach (Hotel hotel in _availableHotels)
+                {
+                    hotel.TotalValueReservation += hotel.WeekTaxValueRegularClient;
+                }
+
+                return _availableHotels;
+            }
+
+            foreach (Hotel hotel in _availableHotels)
+            {
+                hotel.TotalValueReservation += hotel.WeekTaxValueFidelityClient;
+            }
+            return _availableHotels;
         }
 
         public Hotel CheapestOption() 
         {
-            List<Hotel> allHotels = new List<Hotel>();
-            allHotels.Add(Lakewood);
-            allHotels.Add(Bridgewood);
-            allHotels.Add(Ridgewood);
+            List<Hotel> allHotels = _availableHotels;
 
             Hotel CheapestHotel = new Hotel
             {

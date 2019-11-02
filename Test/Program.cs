@@ -1,5 +1,6 @@
 ﻿using System;
 using Test.Models;
+using Test.Services;
 
 namespace Test
 {
@@ -10,7 +11,7 @@ namespace Test
             Console.WriteLine("Please enter the client type and the requested dates, respectively: ");
             string userInput = Console.ReadLine();
 
-            Logic operation = new Logic();
+            HotelBestOptionSearcher operation = new HotelBestOptionSearcher();
             var result = operation.CalculateBestHotel(userInput);
 
             if (result == "Invalid")
