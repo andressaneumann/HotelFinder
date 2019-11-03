@@ -24,7 +24,7 @@ namespace Test.Services
 
             List<string> requestedDays = GettingRequestedDays(splittedUserInputs);
 
-            CustomerHotelsTaxValues(requestedDays, customerType);
+            CheckingCustomerTypeAndDayOfTheWeek(requestedDays, customerType);
             Hotel bestOption = CheapestOption();
 
             return bestOption.Name;
@@ -63,8 +63,9 @@ namespace Test.Services
             return daysOfTheWeek;
         }
 
-        //
-        public void CustomerHotelsTaxValues(List<string> requestedDays, string customerType)
+        //Here we determine the customer type and the specified day of the week, 
+        //and pass the necessary information to the correct function
+        public void CheckingCustomerTypeAndDayOfTheWeek(List<string> requestedDays, string customerType)
         {
             bool isRegular = customerType == "regular" ? true : false;
 
@@ -77,6 +78,7 @@ namespace Test.Services
             }
         }
 
+        //Calculates the Weekend tax value for a regular or fidelity client
         public List<Hotel> WeekendTaxCalculation(bool isRegular)
         {
             if (isRegular)
@@ -96,6 +98,7 @@ namespace Test.Services
             return _availableHotels;
         }
 
+        //Calculates the Week tax value for a regular or fidelity client
         public List<Hotel> WeekTaxCalculation(bool isRegular)
         {
             if (isRegular)
@@ -115,6 +118,7 @@ namespace Test.Services
             return _availableHotels;
         }
 
+        //Checks the best option for the client
         public Hotel CheapestOption() 
         {
             List<Hotel> allHotels = _availableHotels;
