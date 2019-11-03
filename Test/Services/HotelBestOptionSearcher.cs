@@ -32,10 +32,7 @@ namespace HotelFinder.Services
         //Validation of the customer type
         public bool CheckingIfCustomerTypeIsValid(string customerType)
         {
-            if (customerType != "regular" && customerType != "rewards")
-                return false;
-
-            return true;
+            return (customerType == "regular" || customerType == "rewards");
         }
 
         //This function splits the user input into an array of relevant information

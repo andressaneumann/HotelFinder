@@ -1,29 +1,11 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {
-      "HotelFinder.UnitTests/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/HotelFinder.UnitTests.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotelFinder.UnitTests.dll": {}
-        }
-      }
-    }
+    ".NETCoreApp,Version=v3.0": {}
   },
-  "libraries": {
-    "HotelFinder.UnitTests/1.0.0": {
-      "type": "project",
-      "path": "../HotelFinder.UnitTests/HotelFinder.UnitTests.csproj",
-      "msbuildProject": "../HotelFinder.UnitTests/HotelFinder.UnitTests.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": [
-      "HotelFinder.UnitTests >= 1.0.0"
-    ]
+    ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
     "C:\\Users\\Neuma\\.nuget\\packages\\": {},
@@ -55,11 +37,7 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {
-            "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\HotelFinder.UnitTests\\HotelFinder.UnitTests.csproj": {
-              "projectPath": "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\HotelFinder.UnitTests\\HotelFinder.UnitTests.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
