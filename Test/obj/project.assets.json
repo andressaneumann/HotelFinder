@@ -1,11 +1,29 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.0": {
+      "HotelFinder.UnitTests/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HotelFinder.UnitTests.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HotelFinder.UnitTests.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "HotelFinder.UnitTests/1.0.0": {
+      "type": "project",
+      "path": "../HotelFinder.UnitTests/HotelFinder.UnitTests.csproj",
+      "msbuildProject": "../HotelFinder.UnitTests/HotelFinder.UnitTests.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.0": [
+      "HotelFinder.UnitTests >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Neuma\\.nuget\\packages\\": {},
@@ -14,9 +32,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\Test\\Test.csproj",
-      "projectName": "Test",
-      "projectPath": "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\Test\\Test.csproj",
+      "projectUniqueName": "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\Test\\HotelFinder.csproj",
+      "projectName": "HotelFinder",
+      "projectPath": "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\Test\\HotelFinder.csproj",
       "packagesPath": "C:\\Users\\Neuma\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\Test\\obj\\",
       "projectStyle": "PackageReference",
@@ -37,7 +55,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\HotelFinder.UnitTests\\HotelFinder.UnitTests.csproj": {
+              "projectPath": "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\HotelFinder.UnitTests\\HotelFinder.UnitTests.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

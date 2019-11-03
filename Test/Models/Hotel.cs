@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Test.Models
+namespace HotelFinder.Models
 {
     public class Hotel
     {
@@ -12,7 +12,6 @@ namespace Test.Models
         public float WeekTaxValueFidelityClient { get; set; }
         public float WeekendTaxValueRegularClient { get; set; }
         public float WeekendTaxValueFidelityClient { get; set; }
-
         public float TotalValueReservation { get; set; }
        
     }

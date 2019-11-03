@@ -1,8 +1,8 @@
 ﻿using System;
-using Test.Models;
-using Test.Services;
+using HotelFinder.Models;
+using HotelFinder.Services;
 
-namespace Test
+namespace HotelFinder
 {
     class Program
     {

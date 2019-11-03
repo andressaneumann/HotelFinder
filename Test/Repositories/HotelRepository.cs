@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Test.Models;
+using HotelFinder.Models;
 
-namespace Test.Repositories
+namespace HotelFinder.Repositories
 {
     public static class HotelRepository
     {

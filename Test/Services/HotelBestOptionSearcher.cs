@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
-using Test.Models;
-using Test.Repositories;
+using HotelFinder.Models;
+using HotelFinder.Repositories;
 
-namespace Test.Services
+namespace HotelFinder.Services
 {
     public class HotelBestOptionSearcher
     {
         //Getting all hotels from repository
         List<Hotel> _availableHotels = HotelRepository.GetAvailableHotels();
-
 
         //Function to calculate the best hotel option - uses the auxiliary functions to find the best option
         public string CalculateBestHotel(string userInput)
@@ -39,7 +38,7 @@ namespace Test.Services
             return true;
         }
 
-        //This function splits the user input into usable variables
+        //This function splits the user input into an array of relevant information
         public string[] SplitUserInput(string userInput)
         {
             string[] separators = { ": ", "(", ")", ","," " };            
@@ -84,17 +83,14 @@ namespace Test.Services
             if (isRegular)
             {
                 foreach (Hotel hotel in _availableHotels)
-                {
-                    hotel.TotalValueReservation += hotel.WeekendTaxValueRegularClient;
-                }
+                    hotel.TotalValueReservation += hotel.WeekendTaxValueRegularClient;               
 
                 return _availableHotels;
             }
 
             foreach (Hotel hotel in _availableHotels)
-            {
-                hotel.TotalValueReservation += hotel.WeekendTaxValueFidelityClient;
-            }
+                hotel.TotalValueReservation += hotel.WeekendTaxValueFidelityClient;     
+            
             return _availableHotels;
         }
 
@@ -103,18 +99,15 @@ namespace Test.Services
         {
             if (isRegular)
             {
-                foreach (Hotel hotel in _availableHotels)
-                {
-                    hotel.TotalValueReservation += hotel.WeekTaxValueRegularClient;
-                }
+                foreach (Hotel hotel in _availableHotels)                
+                    hotel.TotalValueReservation += hotel.WeekTaxValueRegularClient;                
 
                 return _availableHotels;
             }
 
-            foreach (Hotel hotel in _availableHotels)
-            {
+            foreach (Hotel hotel in _availableHotels)            
                 hotel.TotalValueReservation += hotel.WeekTaxValueFidelityClient;
-            }
+            
             return _availableHotels;
         }
 
@@ -151,6 +144,7 @@ namespace Test.Services
                     }
                 }
             }
+
             return CheapestHotel;
         }
     }
