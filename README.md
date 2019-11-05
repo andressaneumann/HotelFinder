@@ -4,7 +4,8 @@ A software that helps you to find the best option between three hotels - based o
 
 ## Getting Started
 
-*Important*: This project was built using .NET Core 3.0, so you need to have this version of the framework and also the Visual Studio version 16.3 (or higher).
+**Important**: This project was built using .NET Core 3.0, so you need to have this version of the framework and also the Visual Studio version 16.3 (or higher).
+You can find the .NET Core needed here: https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-3.0.100-windows-x64-installer
 
 To start the project you should unzip the files, open the project with Visual Studio and rebuild the project, so the nuget packages can be downloaded. Then you can run it. 
 A command line window will appear and you can insert the data, such as:
