@@ -5263,8 +5263,8 @@
     },
     "HotelFinder/1.0.0": {
       "type": "project",
-      "path": "../Test/HotelFinder.csproj",
-      "msbuildProject": "../Test/HotelFinder.csproj"
+      "path": "../HotelFinder/HotelFinder.csproj",
+      "msbuildProject": "../HotelFinder/HotelFinder.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5282,11 +5282,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\HotelFinder.UnitTests\\HotelFinder.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\Neuma\\Desktop\\Projects\\HotelFinder\\HotelFinder.UnitTests\\HotelFinder.UnitTests.csproj",
       "projectName": "HotelFinder.UnitTests",
-      "projectPath": "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\HotelFinder.UnitTests\\HotelFinder.UnitTests.csproj",
+      "projectPath": "C:\\Users\\Neuma\\Desktop\\Projects\\HotelFinder\\HotelFinder.UnitTests\\HotelFinder.UnitTests.csproj",
       "packagesPath": "C:\\Users\\Neuma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\HotelFinder.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\Neuma\\Desktop\\Projects\\HotelFinder\\HotelFinder.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -5306,8 +5306,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\Test\\HotelFinder.csproj": {
-              "projectPath": "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\Test\\HotelFinder.csproj"
+            "C:\\Users\\Neuma\\Desktop\\Projects\\HotelFinder\\HotelFinder\\HotelFinder.csproj": {
+              "projectPath": "C:\\Users\\Neuma\\Desktop\\Projects\\HotelFinder\\HotelFinder\\HotelFinder.csproj"
             }
           }
         }

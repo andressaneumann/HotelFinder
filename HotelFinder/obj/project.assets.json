@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\Test\\HotelFinder.csproj",
+      "projectUniqueName": "C:\\Users\\Neuma\\Desktop\\Projects\\HotelFinder\\HotelFinder\\HotelFinder.csproj",
       "projectName": "HotelFinder",
-      "projectPath": "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\Test\\HotelFinder.csproj",
+      "projectPath": "C:\\Users\\Neuma\\Desktop\\Projects\\HotelFinder\\HotelFinder\\HotelFinder.csproj",
       "packagesPath": "C:\\Users\\Neuma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Neuma\\Desktop\\Projects\\Test\\Test\\obj\\",
+      "outputPath": "C:\\Users\\Neuma\\Desktop\\Projects\\HotelFinder\\HotelFinder\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
