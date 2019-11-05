@@ -29,7 +29,7 @@ A repository is a storage location. In this project, is where we store all the a
 
 * Services
 
-In the services folder we have the Hotel Best Option Searcher class. Is where we have all the logic concerning the hotel search. There we have all the funcions and validations needed to get to the result.
+In the services folder we have the Hotel Best Option Searcher class. Is where we have all the logic concerning the hotel search. There we have all the funcions and validations needed to get to the correct output.
 
 
 
