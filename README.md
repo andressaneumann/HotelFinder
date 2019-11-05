@@ -1,13 +1,13 @@
 # Hotel Finder
 
-A software that helps you to find the best option between three hotels - based on the less expensive bill and classification leveis. You can insert the dates you desire and the best option will be returned to you.
+A software that helps you to find the best option between three hotels - based on the less expensive bill and classification levels. You can insert the dates you desire and the best hotel option will be returned to you.
 
 ## Getting Started
 
 To start the project you should unzip the files, open the project with Visual Studio and run it. A command line window will appear and you can insert the data, such as:
 
 ```
-Type of client, date1, date2, date3 ....
+<client type>:, <date1>, <date2>, <date3> ....
 
 Regular: 16Mar2009(mon), 17Mar2009(tues), 18Mar2009(wed)
 ```
