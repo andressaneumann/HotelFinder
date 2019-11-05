@@ -20,7 +20,7 @@ The main project was structured using Models, Repositories and Services.
 
 * Models
 
-Models are the main classes we have in the project. We use them as example to instantiate new classes and organize our project acconding to the Oriented Object Programming.
+Models are the main classes we have in the project. We use them as example to instantiate new classes and organize our project acconding to the Oriented Object Programming paradigm.
 
 * Repositories
 
