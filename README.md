@@ -4,7 +4,8 @@ A software that helps you to find the best option between three hotels - based o
 
 ## Getting Started
 
-To start the project you should unzip the files, open the project with Visual Studio and run it. A command line window will appear and you can insert the data, such as:
+To start the project you should unzip the files, open the project with Visual Studio and rebuild the project, so the nuget packages can be downloaded. Then you can run it. 
+A command line window will appear and you can insert the data, such as:
 
 ```
 <client type>:, <date1>, <date2>, <date3> ....
@@ -20,7 +21,7 @@ The main project was structured using Models, Repositories and Services.
 
 * Models
 
-Models are the main classes we have in the project. We use them as example to instantiate new classes and organize our project acconding to the Oriented Object Programming paradigm.
+Models are the main classes we have in the project. We use them as example to instantiate new classes and organize our project acconding to the Object Oriented Programming paradigm.
 
 * Repositories
 
