@@ -67,44 +67,34 @@ namespace HotelFinder.Services
 
             foreach (var day in requestedDays)
             {
-                if (day == "sat" || day == "sun")                
-                    WeekendTaxCalculation(isRegular);                
-                else                
-                    WeekTaxCalculation(isRegular);                                                    
+                TaxCalculation(isRegular, day);
             }
         }
 
-        //Calculates the Weekend tax value for a regular or fidelity client
-        public List<Hotel> WeekendTaxCalculation(bool isRegular)
+        //Calculates the tax value
+        public List<Hotel> TaxCalculation(bool isRegular, string dayOfTheWeek)
         {
             if (isRegular)
             {
                 foreach (Hotel hotel in _availableHotels)
-                    hotel.TotalValueReservation += hotel.WeekendTaxValueRegularClient;               
+                {
+                    if (dayOfTheWeek == "sat" || dayOfTheWeek == "sun")
+                        hotel.TotalValueReservation += hotel.WeekendTaxValueRegularClient;
+                    else
+                        hotel.TotalValueReservation += hotel.WeekTaxValueRegularClient;
+                }
 
                 return _availableHotels;
             }
 
             foreach (Hotel hotel in _availableHotels)
-                hotel.TotalValueReservation += hotel.WeekendTaxValueFidelityClient;     
-            
-            return _availableHotels;
-        }
-
-        //Calculates the Week tax value for a regular or fidelity client
-        public List<Hotel> WeekTaxCalculation(bool isRegular)
-        {
-            if (isRegular)
             {
-                foreach (Hotel hotel in _availableHotels)                
-                    hotel.TotalValueReservation += hotel.WeekTaxValueRegularClient;                
-
-                return _availableHotels;
+                if (dayOfTheWeek == "sat" || dayOfTheWeek == "sun")
+                    hotel.TotalValueReservation += hotel.WeekendTaxValueFidelityClient;
+                else
+                    hotel.TotalValueReservation += hotel.WeekTaxValueFidelityClient;
             }
 
-            foreach (Hotel hotel in _availableHotels)            
-                hotel.TotalValueReservation += hotel.WeekTaxValueFidelityClient;
-            
             return _availableHotels;
         }
 

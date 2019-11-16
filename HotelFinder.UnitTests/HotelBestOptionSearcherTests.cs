@@ -90,45 +90,45 @@ namespace HotelFinder.UnitTests
             Assert.That(result[0] == "mon" && result[1] == "tue" && result[2] == "wed");
         }
 
-        [Test]
-        public void WeekTaxCalculation_RegularClient_ReturnsAHotelList()
-        {
-            bool isRegular = true;
+        //[Test]
+        //public void WeekTaxCalculation_RegularClient_ReturnsAHotelList()
+        //{
+        //    bool isRegular = true;
 
-            List<Hotel> result = _hotelSearcher.WeekTaxCalculation(isRegular);
+        //    List<Hotel> result = _hotelSearcher.WeekTaxCalculation(isRegular);
 
-            Assert.That(result[0].Name == "Lakewood");
-        }
+        //    Assert.That(result[0].Name == "Lakewood");
+        //}
 
-        [Test]
-        public void WeekTaxCalculation_RewardClient_ReturnsAHotelList()
-        {
-            bool isRegular = false;
+        //[Test]
+        //public void WeekTaxCalculation_RewardClient_ReturnsAHotelList()
+        //{
+        //    bool isRegular = false;
 
-            List<Hotel> result = _hotelSearcher.WeekTaxCalculation(isRegular);
+        //    List<Hotel> result = _hotelSearcher.WeekTaxCalculation(isRegular);
 
-            Assert.That(result[0].Name == "Lakewood");
-        }
+        //    Assert.That(result[0].Name == "Lakewood");
+        //}
 
-        [Test]
-        public void WeekendTaxCalculation_RegularClient_ReturnsAHotelList()
-        {
-            bool isRegular = true;
+        //[Test]
+        //public void WeekendTaxCalculation_RegularClient_ReturnsAHotelList()
+        //{
+        //    bool isRegular = true;
 
-            List<Hotel> result = _hotelSearcher.WeekTaxCalculation(isRegular);
+        //    List<Hotel> result = _hotelSearcher.WeekTaxCalculation(isRegular);
 
-            Assert.That(result[0].Name == "Lakewood");
-        }
+        //    Assert.That(result[0].Name == "Lakewood");
+        //}
 
-        [Test]
-        public void WeekendTaxCalculation_RewardClient_ReturnsAHotelList()
-        {
-            bool isRegular = false;
+        //[Test]
+        //public void WeekendTaxCalculation_RewardClient_ReturnsAHotelList()
+        //{
+        //    bool isRegular = false;
 
-            List<Hotel> result = _hotelSearcher.WeekTaxCalculation(isRegular);
+        //    List<Hotel> result = _hotelSearcher.WeekTaxCalculation(isRegular);
 
-            Assert.That(result[0].Name == "Lakewood");
-        }
+        //    Assert.That(result[0].Name == "Lakewood");
+        //}
 
         [Test]
         public void CheapestOption_WhenCalled_ShouldReturnAHotel()

@@ -14,10 +14,9 @@ namespace HotelFinder
             HotelBestOptionSearcher operation = new HotelBestOptionSearcher();
             var result = operation.CalculateBestHotel(userInput);
 
-            if (result == "Invalid")
-                Console.WriteLine("Invalid customer type.");
-            else
-                Console.WriteLine(result);
+            var output = result == "Invalid" ? "Invalid customer" : result;
+
+            Console.WriteLine(result);
         }        
     }
 }
