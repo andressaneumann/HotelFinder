@@ -89,7 +89,7 @@ namespace HotelFinder.Services
                         hotel.TotalValueReservation += hotel.WeekTaxValueRegularClient;
                     else
                         hotel.TotalValueReservation += hotel.WeekTaxValueFidelityClient;
-                }                    
+                }       
                
             }
 
