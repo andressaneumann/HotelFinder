@@ -8,32 +8,34 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Neuma\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Andressa\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Neuma\\Desktop\\Projects\\HotelFinder\\HotelFinder\\HotelFinder.csproj",
+      "projectUniqueName": "C:\\Users\\Andressa\\Desktop\\RestApi\\HotelFinder\\HotelFinder\\HotelFinder.csproj",
       "projectName": "HotelFinder",
-      "projectPath": "C:\\Users\\Neuma\\Desktop\\Projects\\HotelFinder\\HotelFinder\\HotelFinder.csproj",
-      "packagesPath": "C:\\Users\\Neuma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Neuma\\Desktop\\Projects\\HotelFinder\\HotelFinder\\obj\\",
+      "projectPath": "C:\\Users\\Andressa\\Desktop\\RestApi\\HotelFinder\\HotelFinder\\HotelFinder.csproj",
+      "packagesPath": "C:\\Users\\Andressa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andressa\\Desktop\\RestApi\\HotelFinder\\HotelFinder\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Neuma\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Andressa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Users\\Andressa\\Documents\\Visual Studio 2015\\Projects\\TAC\\events.tac.local\\Sitecore NuGet": {},
+        "C:\\Users\\Andressa\\Documents\\Visual Studio 2015\\Projects\\events.tac.local\\events.tac.local\\events.tac.local\\Sitecore Nuget": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://sitecore.myget.org/F/sc-packages/api/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.0": {

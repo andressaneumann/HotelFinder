@@ -20,3 +20,14 @@ C:\Users\Neuma\Desktop\Projects\HotelFinder\HotelFinder\obj\Debug\netcoreapp3.0\
 C:\Users\Neuma\Desktop\Projects\HotelFinder\HotelFinder\obj\Debug\netcoreapp3.0\HotelFinder.AssemblyInfo.cs
 C:\Users\Neuma\Desktop\Projects\HotelFinder\HotelFinder\obj\Debug\netcoreapp3.0\HotelFinder.dll
 C:\Users\Neuma\Desktop\Projects\HotelFinder\HotelFinder\obj\Debug\netcoreapp3.0\HotelFinder.pdb
+C:\Users\Andressa\Desktop\RestApi\HotelFinder\HotelFinder\bin\Debug\netcoreapp3.0\HotelFinder.exe
+C:\Users\Andressa\Desktop\RestApi\HotelFinder\HotelFinder\bin\Debug\netcoreapp3.0\HotelFinder.deps.json
+C:\Users\Andressa\Desktop\RestApi\HotelFinder\HotelFinder\bin\Debug\netcoreapp3.0\HotelFinder.runtimeconfig.json
+C:\Users\Andressa\Desktop\RestApi\HotelFinder\HotelFinder\bin\Debug\netcoreapp3.0\HotelFinder.runtimeconfig.dev.json
+C:\Users\Andressa\Desktop\RestApi\HotelFinder\HotelFinder\bin\Debug\netcoreapp3.0\HotelFinder.dll
+C:\Users\Andressa\Desktop\RestApi\HotelFinder\HotelFinder\bin\Debug\netcoreapp3.0\HotelFinder.pdb
+C:\Users\Andressa\Desktop\RestApi\HotelFinder\HotelFinder\obj\Debug\netcoreapp3.0\HotelFinder.csprojAssemblyReference.cache
+C:\Users\Andressa\Desktop\RestApi\HotelFinder\HotelFinder\obj\Debug\netcoreapp3.0\HotelFinder.AssemblyInfoInputs.cache
+C:\Users\Andressa\Desktop\RestApi\HotelFinder\HotelFinder\obj\Debug\netcoreapp3.0\HotelFinder.AssemblyInfo.cs
+C:\Users\Andressa\Desktop\RestApi\HotelFinder\HotelFinder\obj\Debug\netcoreapp3.0\HotelFinder.dll
+C:\Users\Andressa\Desktop\RestApi\HotelFinder\HotelFinder\obj\Debug\netcoreapp3.0\HotelFinder.pdb

@@ -74,25 +74,23 @@ namespace HotelFinder.Services
         //Calculates the tax value
         public List<Hotel> TaxCalculation(bool isRegular, string dayOfTheWeek)
         {
-            if (isRegular)
-            {
-                foreach (Hotel hotel in _availableHotels)
-                {
-                    if (dayOfTheWeek == "sat" || dayOfTheWeek == "sun")
-                        hotel.TotalValueReservation += hotel.WeekendTaxValueRegularClient;
-                    else
-                        hotel.TotalValueReservation += hotel.WeekTaxValueRegularClient;
-                }
-
-                return _availableHotels;
-            }
-
             foreach (Hotel hotel in _availableHotels)
             {
                 if (dayOfTheWeek == "sat" || dayOfTheWeek == "sun")
-                    hotel.TotalValueReservation += hotel.WeekendTaxValueFidelityClient;
+                {
+                    if (isRegular)
+                        hotel.TotalValueReservation += hotel.WeekendTaxValueRegularClient;
+                    else
+                        hotel.TotalValueReservation += hotel.WeekendTaxValueFidelityClient;
+                }
                 else
-                    hotel.TotalValueReservation += hotel.WeekTaxValueFidelityClient;
+                {
+                    if(isRegular)
+                        hotel.TotalValueReservation += hotel.WeekTaxValueRegularClient;
+                    else
+                        hotel.TotalValueReservation += hotel.WeekTaxValueFidelityClient;
+                }                    
+               
             }
 
             return _availableHotels;
